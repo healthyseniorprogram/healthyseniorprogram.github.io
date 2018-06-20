@@ -11,7 +11,7 @@
     <title>How it Works | Blue Cross Blue Shield of Michigan's Pilot Program</title>
     <meta name="description" content="In a few quick steps, you'll be up and running with the Healthy Senior Program from Blue Cross Blue Shield of Michigan. Download and set up the Garmin and MindSpring apps.">
     <link rel="canonical" href="https://www.healthyseniorprogram.com/how-it-works/" />
-    
+
     <!-- Links for Mac OS icons in CQ -->
 	<link rel="icon" sizes="192x192" href="https://www.bcbsm.com/content/dam/public/shared/icons/touch-icon-192x192.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="https://www.bcbsm.com/content/dam/public/shared/icons/apple-touch-icon-180x180.png">
@@ -22,14 +22,14 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="https://www.bcbsm.com/content/dam/public/shared/icons/apple-touch-icon-76x76.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="https://www.bcbsm.com/content/dam/public/shared/icons/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" href="https://www.bcbsm.com/content/dam/public/shared/icons/apple-touch-icon.png">
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20896946-54"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
+
 	  gtag('config', 'UA-20896946-54');
 	</script>
   </head>
@@ -68,14 +68,14 @@
     <main class="container">
 	    <div class="row">
 		    <div class="col-sm-12">
-			    <button class="btn btn-primary hidden visible-xs" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			    	Setting Up Your Garmin Vivofit&reg; Account
-			    </button>
+          <a class="hiwexpanders" data-toggle="collapse" href="#collapse14" role="button" aria-expanded="false" aria-controls="collapse14">
+            Setting Up Your Garmin Vivofit&reg; Account
+          </a>
 		    </div>
 	    </div>
-        <div class="collapse dont-collapse-sm" id="collapseExample">
-	        <div class="row">
-		        <div class="col-sm-12">
+        <div class="collapse dont-collapse-sm" id="collapse14">
+	        <div class="row" id="garmin">
+		        <div class="col-sm-12 hiwmhide">
 			        <h3>Setting Up Your Garmin Vivofit&reg; Account</h3>
 		        </div>
 		        <div class="col-md-3 text-center">
@@ -104,11 +104,11 @@
 		        </div>
 	        </div>
         </div><!-- .row -->
-        
+
         <hr>
-        
-        <div class="row">
-	        <div class="col-sm-12">
+
+        <div class="row" id="movespring">
+	        <div class="col-sm-12 hiwmhide">
 		        <h3>Downloading the MoveSpring&reg; Application</h3>
 	        </div>
 	        <div class="col-md-3 text-center">
@@ -136,13 +136,13 @@
 		        <p>Complete additional questions.</p>
 	        </div>
         </div><!-- .row -->
-        
-        
-        
+
+
+
         <hr>
-        
+
         <div class="row">
-	        <div class="col-sm-12">
+	        <div class="col-sm-12 hiwmhide">
 		        <h3>Setting Up a MoveSpring Personal Account</h3>
 	        </div>
 	        <div class="col-md-3 text-center">
@@ -170,9 +170,9 @@
 		        <p>Optional: Complete your Profile.</p>
 	        </div>
         </div><!-- .row -->
-        
-        
-        
+
+
+
     </main>
 
     <footer class="container">
@@ -187,8 +187,17 @@
   	</footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            if (location.hash) {
+              $('html,body').animate({
+                scrollTop: $(location.hash).offset().top
+              }, 1400);
+            }
+        });
+    </script>
   </body>
 </html>
