@@ -50,4 +50,5 @@ footer p { font-size: 12px; line-height: 16px; padding: 0; margin: 0 0 24px; }
 }
 @media (min-width: 768px) {
 	.howitworks img { max-width: 200px; }
+	.collapse.dont-collapse-sm { display: block; height: auto !important; visibility: visible; }
 }
