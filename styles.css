@@ -42,15 +42,22 @@ h1.ribbon { text-align: center; color:#FFF; line-height: 90px; height: 90px; bac
 	.inst11::before { content:"11"; }
 	.inst12::before { content:"12"; }
 
+
 span.healthy { font-size: 16px; padding:4px 10px 3px; border:1px solid #ddd; letter-spacing: 1px; }
 
 footer { margin-top: 95px; }
 footer p { font-size: 12px; line-height: 16px; padding: 0; margin: 0 0 24px; }
 
-@media (min-width: 1200px) {
-	.container { max-width: 1260px; }
+@media (max-width: 767px) {
+	.howitworks img { max-width: 300px; }
 }
 @media (min-width: 768px) {
-	.howitworks img { max-width: 200px; }
+	.howitworks img { max-width: 130px; }
 	.collapse.dont-collapse-sm { display: block; height: auto !important; visibility: visible; }
+}
+@media (min-width: 992px) {
+	.howitworks img { max-width: 190px; }
+}
+@media (min-width: 1200px) {
+	.container { max-width: 1260px; }
 }
