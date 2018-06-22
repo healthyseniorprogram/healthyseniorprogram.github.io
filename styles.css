@@ -1,17 +1,20 @@
 body { font-family: 'Nunito Sans', sans-serif; color: #000; }
 container { width: 100%; max-width: 1260px; }
 
-.navbar { padding-left: 0; padding-right: 0;}
-
-li.nav-item a { text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
-.navbar-light .navbar-nav .nav-link { color:#114D97; }
-.navbar-expand-lg .navbar-nav .nav-link { margin-left: 40px; }
-	.nav-link:hover { text-decoration: underline;  }
-
 h1 { font-weight: 300; font-size: 34px; line-height: 42px; }
 h3 { font-weight: 700; font-size: 24px; line-height: 33px; }
 p { font-weight: 400; font-size: 18px; line-height: 26px; }
 p a { color: #114D97; font-weight: 700; }
+
+.navbar { padding-left: 0; padding-right: 0;}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:hover {color: #1782C5;}
+li.nav-item a { text-transform: uppercase; letter-spacing: 1px; font-weight: 700; position:relative;}
+	li.nav-item a:hover { text-decoration: none;}
+	li.nav-item a:hover::after { position: absolute; content:""; width:calc(100% - 1rem); height:4px; background-color: #1782C5; bottom:5px; left:0.5rem;}
+.navbar-light .navbar-nav .nav-link { color:#114D97; }
+.navbar-expand-lg .navbar-nav .nav-link { margin-left: 40px; }
+	.nav-link:hover { text-decoration: underline;  }
 
 .cbanner { position: relative; color: #FFF; }
 	.cbanner:before { position: absolute; top:0; bottom:0; left:0; right:50%; content: ""; background: #015c9b; background: -moz-linear-gradient(left, #015c9b 0%, #0286bd 100%); background: -webkit-linear-gradient(left, #015c9b 0%,#0286bd 100%); background: linear-gradient(to right, #015c9b 0%,#0286bd 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#015c9b', endColorstr='#0286bd',GradientType=1 ); }
@@ -30,7 +33,6 @@ h1.ribbon { text-align: center; color:#FFF; line-height: 90px; height: 90px; bac
 
 .hiw h3 { padding: 0; margin: 54px 0 30px; }
 
-
 	.inst1::before { content:"1"; }
 	.inst2::before { content:"2"; }
 	.inst3::before { content:"3"; }
@@ -44,8 +46,6 @@ h1.ribbon { text-align: center; color:#FFF; line-height: 90px; height: 90px; bac
 	.inst11::before { content:"11"; }
 	.inst12::before { content:"12"; }
 
-
-
 span.healthy { font-size: 16px; padding:4px 10px 3px; border:1px solid #ddd; letter-spacing: 1px; }
 
 .clear50 { clear: both; height: 50px; }
@@ -54,8 +54,9 @@ footer p { font-size: 12px; line-height: 16px; padding: 0; margin: 0 0 24px; }
 
 @media (max-width: 767px) {
 	.howitworks img { max-width: 280px; }
-	.hiwexpanders { display: block; position: relative; padding-right: 50px;}
-		.hiwexpanders:after { position: absolute; right:20px; top:2px; content:url(images/arrow.svg); width:20px; height:20px; }
+	.hiwexpanders { display: block; position: relative; padding-right: 50px; }
+		.hiwexpanders:after { position: absolute; right:20px; top:2px; content:url(images/arrow.svg); width:20px; height:20px; transition: transform 0.5s; }
+		.hiwexpanders.flip:after { transform: rotate(-180deg); }
 	.hiwmhide { display: none;}
 	.navbar-nav .nav-link { text-align: right; }
 	.navbar-expand-lg .navbar-nav .nav-link { margin-left: 0; }

@@ -68,8 +68,8 @@
     <main class="container">
 	    <div class="row">
 		    <div class="col-sm-12">
-			    <div class="clear50"></div>	
-	          <a class="hiwexpanders" data-toggle="collapse" href="#collapse14" role="button" aria-expanded="false" aria-controls="collapse14">
+			    <div class="clear50"></div>
+	          <a class="hiwexpanders ccollapse14" data-toggle="collapse" href="#collapse14" role="button" aria-expanded="false" aria-controls="collapse14">
 	            Setting Up Your Garmin Vivofit&reg; Account
 	          </a>
 		    </div>
@@ -107,13 +107,13 @@
         </div><!-- .row -->
 
         <hr>
-        
-        
-        
-        
+
+
+
+
         <div class="row">
 		    <div class="col-sm-12">
-	          <a class="hiwexpanders" data-toggle="collapse" href="#collapse58" role="button" aria-expanded="false" aria-controls="collapse58">
+	          <a class="hiwexpanders ccollapse58" data-toggle="collapse" href="#collapse58" role="button" aria-expanded="false" aria-controls="collapse58">
 	            Downloading the MoveSpring&reg; Application
 	          </a>
 		    </div>
@@ -140,7 +140,7 @@
 			        <div class="howitworks inst7">
 			        	<img src="../images/movespring7.jpg" alt="MoveSpring Instructions - Organization Code" class="img-fluid" />
 			        </div>
-			        <p>Insert <span class="healthy">HEALTHY</span> as the organization code and select <i>Sign Up</i>. Confirm the Organization and accept the terms of the waiver.</p>
+			        <p>Insert <span class="healthy">HEALTHY</span> as the organization code and select <i>Sign Up</i>. Confirm the organization and accept the terms of the Blue Cross waiver.</p>
 		        </div>
 		        <div class="col-md-3 text-center">
 			        <div class="howitworks inst8">
@@ -154,12 +154,12 @@
 
 
         <hr>
-        
-        
-        
+
+
+
         <div class="row">
 		    <div class="col-sm-12">
-	          <a class="hiwexpanders" data-toggle="collapse" href="#collapse912" role="button" aria-expanded="false" aria-controls="collapse912">
+	          <a class="hiwexpanders ccollapse912" data-toggle="collapse" href="#collapse912" role="button" aria-expanded="false" aria-controls="collapse912">
 	           Setting Up a MoveSpring Personal Account
 	          </a>
 		    </div>
@@ -175,7 +175,7 @@
 			        <div class="howitworks inst9">
 			        	<img src="../images/movespring-create-account.jpg" alt="Create MoveSpring Account" class="img-fluid" />
 			        </div>
-			        <p>Create your account. Select a fun user name and image that will be displayed throughout the application. To be anonymous, do not use your actual name or picture in the app.</p>
+			        <p>Create your account. Select a fun user name and image that will be displayed throughout the application. To remain anonymous, do not use your full name or photo when creating your account.</p>
 		        </div>
 		        <div class="col-md-3 text-center">
 			        <div class="howitworks inst10">
@@ -224,6 +224,19 @@
                 scrollTop: $(location.hash).offset().top
               }, 1400);
             }
+
+            $('#collapse14').on('show.bs.collapse', function () { $('.ccollapse14').addClass('flip'); });
+
+            $('#collapse14').on('hide.bs.collapse', function () { $('.ccollapse14').removeClass('flip'); });
+
+            $('#collapse58').on('show.bs.collapse', function () { $('.ccollapse58').addClass('flip'); });
+
+            $('#collapse58').on('hide.bs.collapse', function () { $('.ccollapse58').removeClass('flip'); });
+
+            $('#collapse912').on('show.bs.collapse', function () { $('.ccollapse912').addClass('flip'); });
+
+            $('#collapse912').on('hide.bs.collapse', function () { $('.ccollapse912').removeClass('flip'); });
+
         });
     </script>
   </body>
