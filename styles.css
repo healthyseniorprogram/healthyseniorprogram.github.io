@@ -46,6 +46,7 @@ h1.ribbon { text-align: center; color:#FFF; line-height: 90px; height: 90px; bac
 
 span.healthy { font-size: 16px; padding:4px 10px 3px; border:1px solid #ddd; letter-spacing: 1px; }
 
+.clear50 { clear: both; height: 50px; }
 footer { margin-top: 95px; }
 footer p { font-size: 12px; line-height: 16px; padding: 0; margin: 0 0 24px; }
 
