@@ -27,7 +27,8 @@ li.nav-item a { text-transform: uppercase; letter-spacing: 1px; font-weight: 700
 h1.ribbon { text-align: center; color:#FFF; line-height: 90px; height: 90px; background: #015c9b; background: -moz-linear-gradient(left, #015c9b 0%, #0286bd 100%); background: -webkit-linear-gradient(left, #015c9b 0%,#0286bd 100%); background: linear-gradient(to right, #015c9b 0%,#0286bd 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#015c9b', endColorstr='#0286bd',GradientType=1 ); }
 
 .faq h3 { color:#1782C5; margin-top:48px; }
-.faq main li { font-size: 18px; line-height: 22px; margin-bottom: 14px; }
+.faq main li,
+.article main li { font-size: 18px; line-height: 22px; margin-bottom: 14px; }
 
 .howitworks { position: relative; display: inline-block; margin:30px 0 24px; }
 .howitworks::before { position: absolute; top:-14px; left:-42px; border-radius: 50%; background-color: #114D97; border:3px solid #FFF; width: 60px; height:60px; line-height: 56px; text-align: center; -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2); box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2); color: #FFF; font-size: 32px; font-weight: 700;}
@@ -52,6 +53,10 @@ span.healthy { font-size: 16px; padding:4px 10px 3px; border:1px solid #ddd; let
 .clear50 { clear: both; height: 50px; }
 footer { margin-top: 95px; }
 footer p { font-size: 12px; line-height: 16px; padding: 0; margin: 0 0 24px; }
+
+.article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+.article strong { font-weight: 700; color: #1782C5; }
+.article h1.ribbon { height: auto; font-size: 30px; line-height: 44px; padding: 20px; }
 
 @media (max-width: 992px) {
 	.navbar-nav .nav-link { text-align: right; }
