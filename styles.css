@@ -18,7 +18,7 @@ li.nav-item a { text-transform: uppercase; letter-spacing: 1px; font-weight: 700
 
 .cbanner { position: relative; color: #FFF; }
 	.cbanner:before { position: absolute; top:0; bottom:0; left:0; right:50%; content: ""; background: #015c9b; background: -moz-linear-gradient(left, #015c9b 0%, #0286bd 100%); background: -webkit-linear-gradient(left, #015c9b 0%,#0286bd 100%); background: linear-gradient(to right, #015c9b 0%,#0286bd 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#015c9b', endColorstr='#0286bd',GradientType=1 ); }
-	.cbanner:after { top:0; bottom:0; right:0; left:50%; content:""; background-image: url('images/cheerful-couple.jpg'); background-repeat: no-repeat; background-size: cover; position: absolute; height: 100%;}
+	.cbanner:after { top:0; bottom:0; right:0; left:50%; content:""; background-image: url('images/cheerful-couple.jpg'); background-repeat: no-repeat; background-size: cover; position: absolute; height: 100%; background-position: center center; }
 	.cbanner h1 { margin: 84px 40px 0 0; }
 	.cbanner p { letter-spacing: 1px; margin: 28px 40px 176px 0; }
 .homeFeatures h1 { margin:64px 0 50px; }
