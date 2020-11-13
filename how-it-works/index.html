@@ -79,7 +79,7 @@
 				    <li>You'll be asked to complete brief surveys to share your experiences.</li>
 				    <li>At the conclusion of the program, you'll use shipping materials and instructions to return the device. The materials and instructions will be provided to you at the beginning of the program.</li>
 			    </ol>
-			    <p class="text-center"><a href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Now</a></p>
+			    <p class="text-center"><a onclick="extLink()" href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Now</a></p>
 	          
 		    </div>
 	    </div>
@@ -94,7 +94,7 @@
 				<p>&copy;1996-2020 Blue Cross Blue Shield of Michigan and Blue Care Network are nonprofit corporations and independent licensees of the Blue Cross and Blue Shield Association. We provide health insurance in Michigan.</p>
 
 				<p>State and federal privacy laws prohibit unauthorized access to members' private information. Individuals attempting unauthorized access will be prosecuted.</p>
-				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a></p>
+				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a>&nbsp;&nbsp;|&nbsp;&nbsp;H9572_VRHlthySnrsWeb_C FVNR 1120</p>
 			</div>
 		</div>
 	</footer>
@@ -104,6 +104,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
+	    function extLink() {
+			var r = confirm("Please note that you’re leaving the Blue Cross Blue Shield of Michigan website. While we recommend this site, it may have different terms, conditions, and privacy policies that you’ll need to follow.");
+			if (r == true) {} else { event.preventDefault(); } 
+		}
         $(document).ready(function () {
             if (location.hash) {
               $('html,body').animate({

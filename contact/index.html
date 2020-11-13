@@ -83,7 +83,9 @@
 1-888-563-3307 (رقم ھاتف الصم والبكم: .(711
 </p>
 
-<p class="text-center" style="margin-top: 40px;"><a href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Here!</a></p>
+<p class="text-center" style="margin-top: 40px;"><a onclick="extLink()" href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Here!</a></p>
+
+<p style="margin-top: 50px; font-size: 1em; line-height: 1.2em;">Blue Cross Blue Shield of Michigan complies with applicable federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex.</p>
           </div>
           
         </div>
@@ -96,14 +98,23 @@
 				<p>&copy;1996-2020 Blue Cross Blue Shield of Michigan and Blue Care Network are nonprofit corporations and independent licensees of the Blue Cross and Blue Shield Association. We provide health insurance in Michigan.</p>
 
 				<p>State and federal privacy laws prohibit unauthorized access to members' private information. Individuals attempting unauthorized access will be prosecuted.</p>
-				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a></p>
+				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a>&nbsp;&nbsp;|&nbsp;&nbsp;H9572_VRHlthySnrsWeb_C FVNR 1120</p>
 			</div>
 		</div>
 	</footer>
+	
+	
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <script>
+		function extLink() {
+			var r = confirm("Please note that you’re leaving the Blue Cross Blue Shield of Michigan website. While we recommend this site, it may have different terms, conditions, and privacy policies that you’ll need to follow.");
+			if (r == true) {} else { event.preventDefault(); } 
+		}
+	</script>
   </body>
 </html>

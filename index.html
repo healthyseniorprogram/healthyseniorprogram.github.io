@@ -71,14 +71,14 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h1>We're thrilled to invite you to participate in Blue Cross Blue Shield of Michigan's Virtual Reality for Healthy Seniors program.</h1>
-				  <p class="cbannersub">This no-cost, eight-week program is available exclusively to a select group of Blue Cross members, including you. It's a new benefit designed to help you become better equipped to manage your pain and to become more socially connected with others, even as you continue social distancing. All you need is:</p>
+				  <p class="cbannersub">This no-cost, eight-week program is available exclusively to a select group of Blue Cross members, including you. It's a new program designed to help you become better equipped to manage your pain and to become more socially connected with others, even as you continue social distancing. All you need is:</p>
 				  <ul style="margin-top: 20px;">
 					  <li>A smartphone and a computer with internet to complete the web-based surveys</li>
 					  <li>Wireless internet access at home</li>
 					  <li>A willingness to participate in weekly group sessions</li>
 					  <li>A commitment to spend a few minutes with the headset each day</li>
 				  </ul>
-				  <p class="cbannercta"><a href="https://avr.tech/vrforhealthyseniors" target="_blank" class="btn btn-outline-light btn-lg" rel="nofollow noopener">Register Now</a></p>
+				  <p class="cbannercta"><a onclick="extLink()" href="https://avr.tech/vrforhealthyseniors" target="_blank" class="btn btn-outline-light btn-lg" rel="nofollow noopener">Register Now</a></p>
 				</div>
 			</div>
 		</div>
@@ -89,14 +89,14 @@
       <div class="row">
         <div class="col-sm-12">
           <h1>We're thrilled to invite you to participate in Blue Cross Blue Shield of Michigan's Virtual Reality for Healthy Seniors program.</h1>
-				  <p>This no-cost, eight-week program is available exclusively to a select group of Blue Cross members, including you. It's a new benefit designed to help you become better equipped to manage your pain and to become more socially connected with others, even as you continue social distancing. All you need is:</p>
+				  <p>This no-cost, eight-week program is available exclusively to a select group of Blue Cross members, including you. It's a new program designed to help you become better equipped to manage your pain and to become more socially connected with others, even as you continue social distancing. All you need is:</p>
 				  <ul style="margin-top: 20px; margin-bottom: 25px;">
 					  <li>A smartphone and a computer with internet to complete the web-based surveys</li>
 					  <li>Wireless internet access at home</li>
 					  <li>A willingness to participate in weekly group sessions</li>
 					  <li>A commitment to spend a few minutes with the headset each day</li>
 				  </ul>
-				  <p><a href="https://avr.tech/vrforhealthyseniors" target="_blank" class="btn btn-outline-light btn-lg" rel="nofollow noopener">Register Now</a></p>
+				  <p><a onclick="extLink()" href="https://avr.tech/vrforhealthyseniors" target="_blank" class="btn btn-outline-light btn-lg" rel="nofollow noopener">Register Now</a></p>
         </div>
       </div>
     </div>
@@ -139,7 +139,7 @@
 			<div class="col-sm-12 text-center">
 				<div class="clear50"></div>
 				<p>Don't miss out: Only 100 spots are available. Sign up today for a chance to participate.</p>
-				 <p class="text-center"><a href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Now</a></p>
+				 <p class="text-center"><a onclick="extLink()" href="https://avr.tech/vrforhealthyseniors" target="_blank" rel="nofollow noopener" class="btn btn-primary btn-lg">Register Now</a></p>
 			</div>
 		</div>
 	</section>
@@ -150,7 +150,7 @@
 				<p>&copy;1996-2020 Blue Cross Blue Shield of Michigan and Blue Care Network are nonprofit corporations and independent licensees of the Blue Cross and Blue Shield Association. We provide health insurance in Michigan.</p>
 
 				<p>State and federal privacy laws prohibit unauthorized access to members' private information. Individuals attempting unauthorized access will be prosecuted.</p>
-				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a></p>
+				<p>Medicare has not reviewed or endorsed this information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information.html" target="_blank">Important Legal &amp; Privacy Information</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.bcbsm.com/index/common/important-information/privacy-practices.html" target="_blank">Online Privacy Practices</a>&nbsp;&nbsp;|&nbsp;&nbsp;H9572_VRHlthySnrsWeb_C FVNR 1120</p>
 			</div>
 		</div>
 	</footer>
@@ -160,5 +160,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+		function extLink() {
+			var r = confirm("Please note that you’re leaving the Blue Cross Blue Shield of Michigan website. While we recommend this site, it may have different terms, conditions, and privacy policies that you’ll need to follow.");
+			if (r == true) {} else { event.preventDefault(); } 
+		}
+	</script>
   </body>
 </html>
